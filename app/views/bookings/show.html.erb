@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @booking.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @booking.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @booking.phone %>
+</p>
+
+<p>
+  <strong>Pax:</strong>
+  <%= @booking.pax %>
+</p>
+
+<p>
+  <strong>Pickup:</strong>
+  <%= @booking.pickup %>
+</p>
+
+<p>
+  <strong>Destiny:</strong>
+  <%= @booking.destiny %>
+</p>
+
+<p>
+  <strong>Hour:</strong>
+  <%= @booking.hour %>
+</p>
+
+<p>
+  <strong>Ondate:</strong>
+  <%= @booking.ondate %>
+</p>
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>

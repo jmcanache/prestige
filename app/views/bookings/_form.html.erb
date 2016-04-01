@@ -1,0 +1,50 @@
+<%= form_for(@booking) do |f| %>
+  <% if @booking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+      <ul>
+      <% @booking.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, required: "required", placeholder: "Joe Doe" %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, required: "required", placeholder: "example@example.com" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone, required: "required", placeholder: "52154789" %>
+  </div>
+  <div class="field">
+    <%= f.label :pax %><br>
+    <%= f.text_field :pax, min:1, max:120, step:1 %>
+  </div>
+  <div class="field">
+    <%= f.label :pickup %><br>
+    <%= f.text_field :pickup, required: "required", placeholder: "From" %>
+  </div>
+  <div class="field">
+    <%= f.label :destiny %><br>
+    <%= f.text_field :destiny, required: "required", placeholder: "To" %>
+  </div>
+  <div class="field">
+    <%= f.label :hour %><br>
+    <%= f.time_select :hour %>
+  </div>
+  <div class="field">
+    <%= f.label :ondate %><br>
+    <%= f.date_select :ondate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
