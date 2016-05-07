@@ -2,6 +2,55 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.modal {
+    width: 300px;
+    height: 200px;
+    line-height: 200px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11;
+}
+
+.alert {
+    line-height: 50px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #dff0d8;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 11;
+    border-color: #d6e9c6;
+    color: #3c763d;
+    padding: 15px;
+}
+
 .form-horizontal label {
     background: #f5f5f5 none repeat scroll 0 0;
     color: #333;
@@ -65,4 +114,108 @@ select{
 
 .field{	
     margin-top: 20px;
+}
+
+.button{
+    background: #293c60 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: normal;
+    padding: 19px 24px 20px;
+    position: relative;
+    text-align: center;
+
+}
+
+.button::before {
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s ease 0s;
+    width: 5px;
+    z-index: 9;
+}
+
+.button:hover {
+    opacity: 1;
+}
+.button:hover::before {
+    background: rgba(0, 0, 0, 0.12) none repeat scroll 0 0;
+    width: 100%;
+}
+
+
+h2.box-header::after {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 80px;
+}
+
+.box-header::after {
+    background: #293c60 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 13px;
+    width: 40px;
+}
+
+h2.box-header {
+    text-align: center;
+}
+h2 {
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 44px;
+}
+
+p.description {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    padding: 0;
+    text-align: center;
+    color: #777;
+}
+
+.bgimage {
+    background-image: url(1.jpg);
+    background-size: 100%;
+}
+.bgimage-inside {
+    padding-top: 24%; /* this is actually (426/1140)*100 */
+}
+
+.pad-fix-1{
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+.header-top-bar-container {
+    background-color: #293c60;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 10px; 
+    font-size: 20px; 
+    padding-left: 20px;
 }

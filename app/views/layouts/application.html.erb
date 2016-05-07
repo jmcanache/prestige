@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PrestigeWebapp</title>
+  <title>Prestige Transportation</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -9,7 +9,69 @@
 </head>
 <body>
 
+      <div class="container">
+        <% if !params[:notice].blank? %>
+
+          <div class="overlay"></div>
+
+          <div class="alert alert-success fade in"> 
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Success!</strong>  <%= params[:notice]%>
+          </div>
+        <%end%>
+        <% if !flash[:notice].blank? %>
+          <div style="padding-top: 1%">
+            <div class="alert alert-success fade in">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <strong><%= flash[:notice]%></strong>
+            </div>
+          </div>
+        <%end%>
+
+        <% if !params[:alert].blank? %>
+          <div style="padding-top: 1%">
+            <div class="alert alert-danger fade in">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <strong> Sorry!  <%= params[:alert] %> </strong>
+           </div>
+         </div>
+        <%end%>
+        <% if !flash[:alert].blank? %>
+          <div style="padding-top: 1%">
+            <div class="alert alert-danger fade in">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <strong> <%= flash[:alert] %> </strong>
+           </div>
+         </div>
+        <%end%>
+
+        <% if !params[:warning].blank? %>
+          <div style="padding-top: 1%">
+            <div class="alert alert-warning">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+               <strong>Warning!  <%= params[:warning] %></strong>          
+            </div>
+          </div>
+        <%end%>
+      </div>
+      
 <%= yield %>
 
+<script type="text/javascript">
+  $(".close").click(function() {
+    $( "div" ).removeClass("overlay");
+  });
+
+</script>
 </body>
 </html>

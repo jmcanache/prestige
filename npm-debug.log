@@ -1,0 +1,167 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'localtunnel' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.25
+4 verbose cache add [ 'localtunnel', null ]
+5 verbose cache add name=undefined spec="localtunnel" args=["localtunnel",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'localtunnel',
+6 verbose parsed url   path: 'localtunnel',
+6 verbose parsed url   href: 'localtunnel' }
+7 silly lockFile a0661bc8-localtunnel localtunnel
+8 verbose lock localtunnel /home/maria/.npm/a0661bc8-localtunnel.lock
+9 silly lockFile a0661bc8-localtunnel localtunnel
+10 silly lockFile a0661bc8-localtunnel localtunnel
+11 verbose addNamed [ 'localtunnel', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile c752cf78-localtunnel localtunnel@
+14 verbose lock localtunnel@ /home/maria/.npm/c752cf78-localtunnel.lock
+15 silly addNameRange { name: 'localtunnel', range: '*', hasData: false }
+16 verbose request where is /localtunnel
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 7e0f0d5871cc697f
+19 verbose url raw /localtunnel
+20 verbose url resolving [ 'https://registry.npmjs.org/', './localtunnel' ]
+21 verbose url resolved https://registry.npmjs.org/localtunnel
+22 verbose request where is https://registry.npmjs.org/localtunnel
+23 info trying registry request attempt 1 at 09:22:31
+24 verbose etag "22CWURJO1Y27CXQIMU6BW5DNS"
+25 http GET https://registry.npmjs.org/localtunnel
+26 http 304 https://registry.npmjs.org/localtunnel
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Sat, 16 Apr 2016 13:52:32 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     etag: '"22CWURJO1Y27CXQIMU6BW5DNS"',
+27 silly registry.get     age: '215',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-jfk1051-JFK',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1460814752.138889,VS0,VE0',
+27 silly registry.get     vary: 'Accept-Encoding' } ]
+28 verbose etag https://registry.npmjs.org/localtunnel from cache
+29 silly addNameRange number 2 { name: 'localtunnel', range: '*', hasData: true }
+30 silly addNameRange versions [ 'localtunnel',
+30 silly addNameRange   [ '0.0.0',
+30 silly addNameRange     '0.0.1',
+30 silly addNameRange     '0.0.2',
+30 silly addNameRange     '0.0.3',
+30 silly addNameRange     '0.0.4',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.1',
+30 silly addNameRange     '0.2.2',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.1.0',
+30 silly addNameRange     '1.1.1',
+30 silly addNameRange     '1.1.2',
+30 silly addNameRange     '1.2.0',
+30 silly addNameRange     '1.3.0',
+30 silly addNameRange     '1.4.0',
+30 silly addNameRange     '1.5.0',
+30 silly addNameRange     '1.5.1',
+30 silly addNameRange     '1.6.0',
+30 silly addNameRange     '1.7.0',
+30 silly addNameRange     '1.8.0',
+30 silly addNameRange     '1.8.1' ] ]
+31 verbose addNamed [ 'localtunnel', '1.8.1' ]
+32 verbose addNamed [ '1.8.1', '1.8.1' ]
+33 silly lockFile c9daa0d1-localtunnel-1-8-1 localtunnel@1.8.1
+34 verbose lock localtunnel@1.8.1 /home/maria/.npm/c9daa0d1-localtunnel-1-8-1.lock
+35 silly lockFile c9daa0d1-localtunnel-1-8-1 localtunnel@1.8.1
+36 silly lockFile c9daa0d1-localtunnel-1-8-1 localtunnel@1.8.1
+37 silly lockFile c752cf78-localtunnel localtunnel@
+38 silly lockFile c752cf78-localtunnel localtunnel@
+39 silly resolved [ { author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
+39 silly resolved     name: 'localtunnel',
+39 silly resolved     description: 'expose localhost to the world',
+39 silly resolved     version: '1.8.1',
+39 silly resolved     license: 'MIT',
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'git://github.com/shtylman/localtunnel.git' },
+39 silly resolved     dependencies:
+39 silly resolved      { request: '2.65.0',
+39 silly resolved        yargs: '3.29.0',
+39 silly resolved        debug: '2.2.0',
+39 silly resolved        openurl: '1.1.0' },
+39 silly resolved     devDependencies: { mocha: '~1.17.0' },
+39 silly resolved     scripts: { test: 'mocha --ui qunit --reporter list --timeout 10000 -- test/index.js' },
+39 silly resolved     bin: { lt: './bin/client' },
+39 silly resolved     main: './client.js',
+39 silly resolved     gitHead: '4ae493ae44265f148fea4d536400994652ce1470',
+39 silly resolved     bugs: { url: 'https://github.com/shtylman/localtunnel/issues' },
+39 silly resolved     homepage: 'https://github.com/shtylman/localtunnel#readme',
+39 silly resolved     _id: 'localtunnel@1.8.1',
+39 silly resolved     _shasum: 'd51b2bb7a7066afb05b57fc9db844015098f2e17',
+39 silly resolved     _from: 'localtunnel@',
+39 silly resolved     _npmVersion: '3.3.12',
+39 silly resolved     _nodeVersion: '5.4.1',
+39 silly resolved     _npmUser: { name: 'defunctzombie', email: 'shtylman@gmail.com' },
+39 silly resolved     dist:
+39 silly resolved      { shasum: 'd51b2bb7a7066afb05b57fc9db844015098f2e17',
+39 silly resolved        tarball: 'https://registry.npmjs.org/localtunnel/-/localtunnel-1.8.1.tgz' },
+39 silly resolved     maintainers: [ [Object] ],
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/localtunnel/-/localtunnel-1.8.1.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install localtunnel@1.8.1 into /usr/local/lib
+41 info installOne localtunnel@1.8.1
+42 verbose lib/node_modules/localtunnel unbuild
+43 verbose tar unpack /home/maria/.npm/localtunnel/1.8.1/package.tgz
+44 silly lockFile 64ac3b3b-cal-lib-node-modules-localtunnel tar:///usr/local/lib/node_modules/localtunnel
+45 verbose lock tar:///usr/local/lib/node_modules/localtunnel /home/maria/.npm/64ac3b3b-cal-lib-node-modules-localtunnel.lock
+46 silly lockFile 4b694ade-pm-localtunnel-1-8-1-package-tgz tar:///home/maria/.npm/localtunnel/1.8.1/package.tgz
+47 verbose lock tar:///home/maria/.npm/localtunnel/1.8.1/package.tgz /home/maria/.npm/4b694ade-pm-localtunnel-1-8-1-package-tgz.lock
+48 silly gunzTarPerm modes [ '775', '664' ]
+49 error tar.unpack untar error /home/maria/.npm/localtunnel/1.8.1/package.tgz
+50 silly lockFile 64ac3b3b-cal-lib-node-modules-localtunnel tar:///usr/local/lib/node_modules/localtunnel
+51 silly lockFile 64ac3b3b-cal-lib-node-modules-localtunnel tar:///usr/local/lib/node_modules/localtunnel
+52 silly lockFile 4b694ade-pm-localtunnel-1-8-1-package-tgz tar:///home/maria/.npm/localtunnel/1.8.1/package.tgz
+53 silly lockFile 4b694ade-pm-localtunnel-1-8-1-package-tgz tar:///home/maria/.npm/localtunnel/1.8.1/package.tgz
+54 verbose lib/node_modules/localtunnel unbuild
+55 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+55 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+55 error   errno: 3,
+55 error   code: 'EACCES',
+55 error   path: '/usr/local/lib/node_modules',
+55 error   fstream_type: 'Directory',
+55 error   fstream_path: '/usr/local/lib/node_modules/localtunnel',
+55 error   fstream_class: 'DirWriter',
+55 error   fstream_stack:
+55 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+55 error      '/usr/lib/nodejs/mkdirp/index.js:46:53',
+55 error      'Object.oncomplete (fs.js:107:15)' ] }
+56 error Please try running this command again as root/Administrator.
+57 error System Linux 4.2.0-23-generic
+58 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "localtunnel"
+59 error cwd /home/maria/prestige_webapp
+60 error node -v v0.10.25
+61 error npm -v 1.4.21
+62 error path /usr/local/lib/node_modules
+63 error fstream_path /usr/local/lib/node_modules/localtunnel
+64 error fstream_type Directory
+65 error fstream_class DirWriter
+66 error code EACCES
+67 error errno 3
+68 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+69 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+69 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:46:53
+69 error fstream_stack Object.oncomplete (fs.js:107:15)
+70 verbose exit [ 3, true ]
