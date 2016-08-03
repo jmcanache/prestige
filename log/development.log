@@ -46084,3 +46084,486 @@ Completed 200 OK in 1485ms (Views: 1479.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-05-07 11:12:08 -0430
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-03 20:10:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (34.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/maria/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 118ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2016-08-03 20:10:28 -0300
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (145.5ms)
+  Rendered bookings/new.html.erb within layouts/application (179.6ms)
+Completed 200 OK in 3494ms (Views: 3438.2ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/assets/application.self-667dead6a73bfde517348d7f30ff48f6f028a359d279aea6665b35b70cb2dc9e.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/theme.self-df1da30301997b52795cb0213bccd335f2897b65f84d1d7d7c63c04f048d902f.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/core.self-23329dbe1961b938278306c019037fe36ff6ccb28193f1038e52ccbf52858163.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/accordion.self-ab9f397561a07488cf14279bc7186619e859cdd485b81d3a6439e85b81d32a05.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/menu.self-5277268fc75b8d6e851ccb5ca12e162c7440315d70974f34db800bc70330f135.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-2d6dfccae4fba2fe27d00372b974d4540d75a00cea6ceaa0a6aa33852b9d3ac3.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/button.self-524bbf2d9cf9547e14eda3866ad90726890ff390563ea46013c1ca019694c320.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/datepicker.self-bf92a2196df590f06fad4ab5bb7ed4db1874a9bef0c9af85ea0490d2108b9966.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/draggable.self-ff524fb7ae3023ef910b4e6c5cd7260e4f4dc6fb2eca9a525dd478017639bbba.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/resizable.self-3a16663ae8d70cc7f633554daff3a5875f54915ae3071fc3f3a1aeb0f7c8ab24.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/dialog.self-3e41d6ad769c697e76dceeef1bf376008c8e93e85c144fea25437fa3188d86b8.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/progressbar.self-de3d9f82b3ceaaa88bb0686e77f2548a3cfea1cf4dc37df4f3bc70f99d86a95a.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/selectable.self-fa1d88ada89c5a57dae84c7cb4f17bf153cb1cff063ed4ba2091b5b5f54e77e6.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/selectmenu.self-9a2b20dc7f10d3a7b09d0dc5d038d02dd1aff160e97abf8eaa3d3f5ab09fbb4b.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/slider.self-57c4d255d192836d85e1253fe091b5b01fed1c389b0dbdedd71c129dcf1cfd35.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/sortable.self-bd8078895e9d12cd8586eb9b507ccb4d533daadd0f103f7387554c30cc96313f.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/spinner.self-2d292d2e83f1281032010a5acb9cb23492aeecdc95395a5d93f2a3bba9a2c400.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/tabs.self-3dec02555ec77af087a252cdd5be276e714d0059e052a2c92dc2c5401e9df63d.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/tooltip.self-a349b3ba7b1458eed72dc3ffba597af53b9ceb622e7a324cdfd1c01c7b351f1f.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/base.self-1b94b6a8eaf399d6f662a2ffe0b9b52a958c6180e15b6e07a7ecab0087c9234d.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/all.self-a9629accff9d629face2489f3b6d620ded83dd62f6f04f69e5b33eea2b8d73b6.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.self-dba1355510faf9e84dc3989ebd08c46a1088009e4cbfa347ffcf1f70cf35d1f8.css?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/accordion.self-c95f320275150a94241b004a91e21eef9c5ae9965a793cb3e2475f6078a1670d.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/droppable.self-a7a2b4c2cec8fc176f51e4e4291d92bfd3eec40b6a580b47fc54c16334d52882.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/effect-clip.self-7368e4597c32360b162d264ff8bbd0cf9fb1535eb9b4564e6eb7c1db3c774bf3.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/effect-blind.self-ed102209d7aa0b7374f3db8478cc7dcff5f9980d3146e8bf9fbfab959c6d5d8a.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/effect-bounce.self-bfcb9288797ecd234ddeedf4fbc5b4c9de94a4e6d8d44e6faa5b5e9836fad9fd.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/effect-drop.self-294aaa72126ad9c94d6558cca792eb3716754713aca98f18a9dd7c493150ed92.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:32 -0300
+
+
+Started GET "/assets/jquery-ui/effect-explode.self-68e74dc114a52f3f4d7033e40c39196961bdcf439652daa2e98baa115c7bb44b.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-fade.self-42d542a5253e0a610717460102ee6bee339c656cc188e491d89eb0779043c963.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-fold.self-ad9967f153423916300dbf1104b00f7ad7bbd6a222a0fcc1012ebe251bcb13c8.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-highlight.self-f922b7179ab8ccfa7865141f38865bba0a3d2bdceba7561c27ca14544dbfd996.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-size.self-368aecefa09656a2be5c72dc8e685b120363a3df812134cbd2dd998bafa179fd.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-scale.self-884a5abcb6d90fcd9f9a071aa8329638184df688afced1b1d3b6be6c69f4dd7f.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-puff.self-93415831093923a70f671d73e8d0b3d94deb37ac7472a036a4add545f565c166.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.self-eb107c0d136eccdfbd8a2f0f2ee71e0f6911cb300c6b63cc2fe4f6532e6a9a97.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-shake.self-63bcc14897aac5b84e10690be94d64d5724f864aa14c913b4d1030c461a256ad.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-slide.self-c93054a4a80d1f986760806d81ab067e4a4120bf103337e152ecc24d36e785f6.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-transfer.self-181245634ec522320fc1081f6dbf94fd982f34eefa03555f76817dedfcdea336.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/progressbar.self-a259ff5a2a5e7aef0ec21bda94edd0f6bc1e9821128d901de415956edf212b0d.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/selectmenu.self-09dbcac573f0e508194bd9deff254db090889b380d030261857860309c0918e8.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/selectable.self-42e53fc2f95211314e36a8094c42560f869c207f16d68cfc206aa37201dcdc03.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/slider.self-8af8d2a0661743ba88b4cfb99d5c8c874cfa3fc6528ae4e9252366b388def0b7.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/spinner.self-3c8c95a7bc9c877d0f9c16789246bbedda6b8e8fbf5927951babdab775aed02e.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui/tooltip.self-38f04ac3a6c8fb2391ec6832b68845671cc9013a94371b7eb239478f4835eb73.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/jquery-ui.self-52111578aa54225c9ebfe06f78a62771020ee548bb27d62228ee3f5e6633969d.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bookings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.self-815e1cd2e55ec079e4c10a837555fd53b272224c78cf2a9404cfcf5932d43186.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.self-d8764534d484a8ad1107f25d5055c72def7515ff37b74002e171bc01791e2569.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.self-e95a3ffa2c92ab9fd1c490585f0664f385a0c529f4b462c4e8f1fab196728f98.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.self-3cb1f2509fcef48537941cbfc1e01034b1803fb2a32d1fbccf9eea1d71a3d144.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bs.self-a9f88ff3048eda7a3915d3bc5fee831813bf64357688ca1d71249f190b5b3c2e.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.self-9a18332afeed3b5d913f701e3a5359a3906fac9f8fe0d8271bfa59b17bef3843.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.en-AU.self-6667a122850dd1f2b2e036bdaad22bc82d7fb3d6f24c0eb0ca5455cbdfae2985.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.self-6269279f98dbec07d08be043c80d3698c8db6da6098298b06c7e9eaca989db3a.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.self-962a18198db67ac87d9079f67b2167072ca4588cb77341999c5d6a93334a9143.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.self-df52cb73f35b10e81c27da3726fedcb47ce944244b37822f2808191f1b699614.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.self-3b6d7157be553c75fb586e9bbcb1caf9ffb68b3e52621ce7a0b4d80b3816a41e.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.self-c47144f58a0c79632a13f38f22efd1b9f2d077e4d6ed1184c473b92bb0a17383.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.en-GB.self-e822658c28f996dd9184e78b590ee770da01e479bc73fdb235b694232278bb4c.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.eo.self-bb3c1772c20b81e485802d43cdcda342c29037880fca098f5a82db81c8decae7.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.self-842ee703891e9e2578cff08e872f082190b7b443253897c84981fb1241ef1483.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.self-8d6af09ae9e4558db67ad818cac5de0451f7a10dc31a6e2987a715562524c44b.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.eu.self-0df62f8cfe7e8b05855195ee28292e9cf35ec174cd33f7feac7c62e5e6066bda.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.self-20ab53975a47e1cdba4e7a41e0f0c567a2a699d53118ccdf6ea5aae33b692d15.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.self-2609765afa68eb2078568f8d785522a588a73222538228637427eac53496df66.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fo.self-fd8c0c500526cb16dd180ba9d832a4e5e0d40c3a570318a73ee2076b32cbbd1a.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr-CH.self-5a3e4840822fb4e6aa55af077ce89acb48e1629c299244258666a9eaf3e16a5f.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.self-fc22f4a24fd9c64106ee1ffdd8167f9bcbb8544093f9acfd3e78cc79acaaa8ab.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.self-1fccddef3fa899f6fc9f859fb7ea9d5839b554e6ec225bc2c195bd7f67ea55ad.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.self-9d26121395049e408a1223d6eeccf625e4969a6a5d52f740af1ad533646e93a4.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.self-7e61fabfb46c1eb015b85ee997ba8710aebb4640736f5ac596cfd37f32caab66.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.self-f49dd94a82276c26c3441a8f5834842aaff8e1015d2ee90af3a842482685b1b3.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hy.self-519e17fdf49be45e3c787cde8525c882046f51fd063bfc978bc38a37308dc7e9.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.self-b8cf8fca37ec25ed1c3872fed7e439361179491173710ea1dfa3e784e9c5bbd0.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.self-eb9734e137173e9c043266c371c2dc6723f896d0d10cd0d9489ab448425352de.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it-CH.self-717fdb47d5142b72e9e7f64eec844ae20deacf76e64b484fc6c52139ea64e607.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.self-71bbf2309e2ea365c4b4e21bcf5fa9e79bd1fb6aee0a2f097a0439645a79dbf7.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.self-2c4ff027cc32c6144d3460f8e1b848fbc60db128d486ae541883497f289127bb.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.self-ea07114145eb6345c3e6b4e0ab99c8dcb42b05e7fc972cbde0997b752895ebc9.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kh.self-9d2694499d40685986d7db3a0fb8145a88ed95a042b4d7b86545493ce3c1201f.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.self-6c236b50ab3afd171e2d6ea0371416af9cc39ebfdf30c4ce5c05f4b23225ccee.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ko.self-77411d790ff5bbd9da257d55c4375bc080c3c72222f94abc313f675eeabaedd1.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.self-cb335efac68187f94ccc34ed07c05f7cf6ace4ae97770209f1e89c92892f0610.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.self-fc4a3d6ee6a275732e35936f07c8fee862c21064b1471d79be6a50a81627c395.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.self-5d8e8777406208ba6d788c14eb94dc6ec161efe23c377bb1688acd8a3dc80c70.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.me.self-bc3ded41fba54540cb7c229e2a81c54e1dc95aa060e13249996c3af17a07d925.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.self-2879e14c87c2ed072afa02e973d28c25eccda71604f545f325f5ccb7f9566d9a.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mn.self-9bde9683a01be40a036bf1d3df9376fc1855a9df29248e5604ab8c1926bafe4f.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.self-5448409786aef52a30a3fa0309fed12e2972d62f3ffcecd3daad3661d2b3a3bb.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.self-bc15d9793637e09369dcc17cc1f76ee50f8fb3bd314b592238db7e107ba9780c.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.self-8a42d57bf7a5ef08e774ad6ac07ccc42119609f0887a0a9db992a31bc22fb8c8.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.self-12fa155a1784c9def99d028f7178ab609055cce8de67d75371780172dea6e6ce.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.self-835c27d08aa948acba7a496420da4d74da46ffbe5b7b900d927debc46878ceba.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.self-bd9ed91cf705ebdec0d35a577541cb18a7b106c255b63b14048b839454783b50.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.self-761e5926a9ad2a08a3931dbecc3f19f9079398de8cd2388f2a193c14d40d7de7.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.self-c8b0cbc3c837667cc1e12914294f4cc5e3310d82d74031773327f31004772938.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.self-b0f0745b965ffc6c72f79cf8ab7962617897fd538084871b7316538cabf5ab3d.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.self-9778ded684088fc0d8cd4abcb87572575e59f1027cdbfa98570db215dfed95d0.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.self-968b0850c75dc75987a4287bd692cad3d074729c3a0f67f92d48cfb6ccd1eac9.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.self-4e8d9a4dc60207a247dd0e4d7c0f172c8cd08f8b4f1e8e86dd7384489559aafb.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.self-508e59df5ae2738367e9ee26ceb1984620c7d3365d89c500a2f654c73e41c4cc.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.self-18b1915d69a94d8c0c7dc954a99ae4786ff2f67d4925370ccb926692fc536885.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sr-latin.self-be5aec102faba5f69237b7bb53843eed7f75c417025cf9105616fe3bea3e3da0.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.self-3224e5dba45c9b9362543f5efe2a02d23b71b7181ea0b7a92fc4637559f17799.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sr.self-0fdd9f114cd83480c0d41f6c4cd9ff5d41984d64f6d7944bd4739f2b9a8b0559.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.self-59511a9cf8697e071e3e45937a4ffa74ce67edf099d767fcfcd43544833b639f.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.self-6b5e12e322803172a7bb234b38a2774a18b7057caba09bf10e95276875879a35.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.self-38ccaf19cff8c13178de6efb294156266bbb5ce6652531d4b53f7f869986ce71.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.self-32d4dcbd80fec4c33ced2cc50217d1cdfe9b351815a939878dedd504f0f29eec.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.self-d3090a654f9c3b2ecf04746b1d8616e9fbcd4f6063435f91e76ffd00688684f4.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.self-ba78379f87a0202998faa6e7c5b20476712eb0431e243819807b20ef110db58f.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.self-36dc3fbbffa4afffa02f84c934c42cc69a7b8bf9637967f9d510c3a595c06bfd.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.self-ea1ea635099f9e93b2f5903108a2f939897810d090fa5959545f9cd4ecfaef14.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.self-919520009565c93f98d81b453874a8adc045d992e4cf63904186e82f852e123b.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.self-75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-08-03 20:10:34 -0300
+
+
+Started POST "/bookings" for 127.0.0.1 at 2016-08-03 20:11:10 -0300
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oknuyeihmiK+G2pqJhFvDeyoY4ARJN+hf20H5HGSXgGNG50oZeNuf47JJWqMgOM0FeH/vxtHjvBcc/5zjZPjjg==", "booking"=>{"name"=>"maria", "email"=>"majoguevara10@gmail.com", "phone"=>"30983094830948394", "pickup"=>"msjsjs", "destiny"=>"kswjsjs", "pax"=>"4", "ondate"=>"2016/08/10", "hour(1i)"=>"2016", "hour(2i)"=>"8", "hour(3i)"=>"3", "hour(4i)"=>"23", "hour(5i)"=>"10", "comment"=>"hola"}, "commit"=>"Create Booking"}
+Unpermitted parameter: comment
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (18.1ms)[0m  [1mINSERT INTO `bookings` (`name`, `email`, `phone`, `pax`, `pickup`, `destiny`, `ondate`, `hour`, `created_at`, `updated_at`) VALUES ('maria', 'majoguevara10@gmail.com', '30983094830948394', '4', 'msjsjs', 'kswjsjs', '2016-08-10', '2016-08-03 23:10:00.000000', '2016-08-03 23:11:10', '2016-08-03 23:11:10')[0m
+  [1m[35m (97.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/bookings/new?notice=Booking+was+successfully+created.
+Completed 302 Found in 134ms (ActiveRecord: 115.4ms)
+
+
+Started GET "/bookings/new?notice=Booking+was+successfully+created." for 127.0.0.1 at 2016-08-03 20:11:10 -0300
+Processing by BookingsController#new as HTML
+  Parameters: {"notice"=>"Booking was successfully created."}
+  Rendered bookings/_form.html.erb (10.1ms)
+  Rendered bookings/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 1138ms (Views: 1136.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-08-03 20:11:12 -0300
