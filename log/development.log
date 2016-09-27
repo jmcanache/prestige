@@ -46626,3 +46626,26 @@ Processing by BookingsController#show as HTML
   [1m[35mBooking Load (12.4ms)[0m  SELECT  `bookings`.* FROM `bookings` WHERE `bookings`.`id` = 37 LIMIT 1
   Rendered bookings/show.html.erb within layouts/application (1.9ms)
 Completed 200 OK in 1013ms (Views: 950.1ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-27 12:35:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (46.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 155ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-27 12:35:43 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2016-09-27 12:35:49 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (119.0ms)
+  Rendered bookings/new.html.erb within layouts/application (138.8ms)
+Completed 200 OK in 3771ms (Views: 3367.6ms | ActiveRecord: 343.7ms)
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-09-27 12:35:56 -0500
