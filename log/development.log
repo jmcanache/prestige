@@ -47157,3 +47157,3026 @@ NameError (uninitialized constant BookingsController::Notifier):
   Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
   Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (105.4ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2016-09-27 13:17:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BookingsController#index as HTML
+  [1m[35mBooking Load (0.8ms)[0m  SELECT `bookings`.* FROM `bookings`
+  Rendered bookings/index.html.erb within layouts/application (68.2ms)
+Completed 200 OK in 2527ms (Views: 2471.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2016-09-27 13:17:22 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (56.1ms)
+  Rendered bookings/new.html.erb within layouts/application (68.5ms)
+Completed 200 OK in 1344ms (Views: 1343.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-09-27 13:17:25 -0500
+
+
+Started POST "/bookings" for 127.0.0.1 at 2016-09-27 13:17:44 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NBmpUbsdhXAC/07ngIvM6I6tTA44mS9d6J1PlvRZA0cOwPBqCEm80u0lV77XM5px8i1Tqxt64WLguiIYDX9uLQ==", "booking"=>{"name"=>"jose mnuale", "email"=>"canache_39@hotmail.com", "phone"=>"04128391530", "pickup"=>"1", "destiny"=>"testing", "pax"=>"22", "ondate"=>"2016/10/06", "hour(1i)"=>"2016", "hour(2i)"=>"9", "hour(3i)"=>"27", "hour(4i)"=>"18", "hour(5i)"=>"17", "comment"=>"trew"}, "commit"=>"Create Booking"}
+  [1m[36m (1.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (20.8ms)[0m  INSERT INTO `bookings` (`name`, `email`, `phone`, `pax`, `pickup`, `destiny`, `ondate`, `comment`, `hour`, `created_at`, `updated_at`) VALUES ('jose mnuale', 'canache_39@hotmail.com', '04128391530', '22', '1', 'testing', '2016-10-06', 'trew', '2016-09-27 18:17:00.000000', '2016-09-27 18:17:44', '2016-09-27 18:17:44')
+  [1m[36m (71.2ms)[0m  [1mCOMMIT[0m
+
+Notifier#send_booking_request: processed outbound mail in 30.2ms
+Completed 500 Internal Server Error in 551ms (ActiveRecord: 93.7ms)
+
+ActionView::MissingTemplate (Missing template layouts/mailer with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/jose/workspace/prestige/prestige_webapp/app/views"
+):
+  app/mailers/notifier.rb:6:in `send_booking_request'
+  app/controllers/bookings_controller.rb:31:in `create'
+
+
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.5ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.6ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (68.3ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.8ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.7ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.8ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2016-09-27 13:19:20 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NBmpUbsdhXAC/07ngIvM6I6tTA44mS9d6J1PlvRZA0cOwPBqCEm80u0lV77XM5px8i1Tqxt64WLguiIYDX9uLQ==", "booking"=>{"name"=>"jose mnuale", "email"=>"canache_39@hotmail.com", "phone"=>"04128391530", "pickup"=>"1", "destiny"=>"testing", "pax"=>"22", "ondate"=>"2016/10/06", "hour(1i)"=>"2016", "hour(2i)"=>"9", "hour(3i)"=>"27", "hour(4i)"=>"18", "hour(5i)"=>"17", "comment"=>"trew"}, "commit"=>"Create Booking"}
+  [1m[35m (2.6ms)[0m  BEGIN
+  [1m[36mSQL (22.0ms)[0m  [1mINSERT INTO `bookings` (`name`, `email`, `phone`, `pax`, `pickup`, `destiny`, `ondate`, `comment`, `hour`, `created_at`, `updated_at`) VALUES ('jose mnuale', 'canache_39@hotmail.com', '04128391530', '22', '1', 'testing', '2016-10-06', 'trew', '2016-09-27 18:17:00.000000', '2016-09-27 18:19:20', '2016-09-27 18:19:20')[0m
+  [1m[35m (102.3ms)[0m  COMMIT
+  Rendered notifier/send_booking_request.html.erb within layouts/mailer (2.0ms)
+
+Notifier#send_booking_request: processed outbound mail in 597.2ms
+
+Sent mail to canache_39@hotmail.com (58.3ms)
+Date: Tue, 27 Sep 2016 13:19:20 -0500
+From: prestige-transportation@prestige.com
+To: canache_39@hotmail.com
+Message-ID: <57eab828cfa23_184c26857d5c3085@jose-Extensa-5230.mail>
+Subject: New booking request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allied</title>
+  <style type="text/css" media="screen">
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass {
+      display: block !important;
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    p,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #333333;
+      line-height: 1.5em;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    body,
+    p {
+      margin-bottom: 0;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+
+    img {
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .background {
+      background-color: #333333;
+    }
+
+    table.background {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .block-img {
+      display: block;
+      line-height: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a,
+    a:link {
+      color: #2A5DB0;
+      text-decoration: underline;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .wrap {
+      width: 600px;
+    }
+
+    .wrap-cell {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .header-cell,
+    .body-cell,
+    .footer-cell {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .header-cell {
+      background-color: #eeeeee;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .body-cell {
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-bottom: 34px;
+    }
+
+    .footer-cell {
+      background-color: #eeeeee;
+      text-align: center;
+      font-size: 13px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .card {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .data-heading {
+      text-align: right;
+      padding: 10px;
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+
+    .data-value {
+      text-align: left;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .force-full-width {
+      width: 100% !important;
+    }
+
+  </style>
+  <style type="text/css" media="only screen and (max-width: 600px)">
+    @media only screen and (max-width: 600px) {
+      body[class*="background"],
+      table[class*="background"],
+      td[class*="background"] {
+        background: #eeeeee !important;
+      }
+
+      table[class="card"] {
+        width: auto !important;
+      }
+
+      td[class="data-heading"],
+      td[class="data-value"] {
+        display: block !important;
+      }
+
+      td[class="data-heading"] {
+        text-align: left !important;
+        padding: 10px 10px 0;
+      }
+
+      table[class="wrap"] {
+        width: 100% !important;
+      }
+
+      td[class="wrap-cell"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="" class="background">
+	  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background: #eeeeee !important;">
+    <tr>
+      <td align="center" valign="top" width="100%" style="background-color: #eee !important;">
+        <center>
+          <table cellpadding="0" cellspacing="0" width="600" class="wrap">
+            <tr>
+              <td valign="top" class="wrap-cell" style="padding-top:30px; padding-bottom:30px; padding-left: 10px">
+                <table cellpadding="0" cellspacing="0" class="force-full-width">
+                  <tr>
+                   <td height="60" valign="top" style="background: #ffffff !important; padding-left: 10px; padding-top: 10px;text-align:center">
+                   		<img src="https://s5.postimg.org/ru77m03nb/logo.png" alt="Logo" width="400" height="69" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="body-cell">
+                      <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                        <tr>
+                          <td valign="top" style="padding: 20px; background-color:#ffffff;">
+                          Hi jose mnuale,<br><br>
+                          There is a new booking request for you to check out. Please confirm the dates.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                              <td align="center" style="padding:20px 0;">
+                                <center>
+                                  <table cellspacing="0" cellpadding="0" class="card">
+                                    <tr>
+                                      <td style="background-color:#286090; text-align:center; padding:10px; color:white; ">
+                                        Booking Details
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border:1px solid #286090;">
+                                        <table cellspacing="0" cellpadding="20" width="100%">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Client Name:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    jose mnuale
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Email:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    canache_39@hotmail.com
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Phone:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    04128391530
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    From:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    1
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    To:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    testing
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Passengers:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    22
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Date:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   2016/10/06
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Hour:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   18 : 17
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td width="150" class="data-heading">
+                                                    Comment:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   trew
+                                                  </td>
+                                                </tr>                                                                                               
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                              </td>
+                            </tr>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 20px;background-color:#ffffff;">
+                            Thank you!<br>
+                            Prestige Transportation <br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+  Rendered notifier/send_booking_request.html.erb within layouts/mailer (5.5ms)
+
+Notifier#send_booking_request: processed outbound mail in 26.7ms
+
+Sent mail to canache39@gmail.com (10.9ms)
+Date: Tue, 27 Sep 2016 13:19:20 -0500
+From: prestige-transportation@prestige.com
+To: canache39@gmail.com
+Message-ID: <57eab828e49a5_184c26857d5c317d@jose-Extensa-5230.mail>
+Subject: New booking request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allied</title>
+  <style type="text/css" media="screen">
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass {
+      display: block !important;
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    p,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #333333;
+      line-height: 1.5em;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    body,
+    p {
+      margin-bottom: 0;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+
+    img {
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .background {
+      background-color: #333333;
+    }
+
+    table.background {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .block-img {
+      display: block;
+      line-height: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a,
+    a:link {
+      color: #2A5DB0;
+      text-decoration: underline;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .wrap {
+      width: 600px;
+    }
+
+    .wrap-cell {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .header-cell,
+    .body-cell,
+    .footer-cell {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .header-cell {
+      background-color: #eeeeee;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .body-cell {
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-bottom: 34px;
+    }
+
+    .footer-cell {
+      background-color: #eeeeee;
+      text-align: center;
+      font-size: 13px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .card {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .data-heading {
+      text-align: right;
+      padding: 10px;
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+
+    .data-value {
+      text-align: left;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .force-full-width {
+      width: 100% !important;
+    }
+
+  </style>
+  <style type="text/css" media="only screen and (max-width: 600px)">
+    @media only screen and (max-width: 600px) {
+      body[class*="background"],
+      table[class*="background"],
+      td[class*="background"] {
+        background: #eeeeee !important;
+      }
+
+      table[class="card"] {
+        width: auto !important;
+      }
+
+      td[class="data-heading"],
+      td[class="data-value"] {
+        display: block !important;
+      }
+
+      td[class="data-heading"] {
+        text-align: left !important;
+        padding: 10px 10px 0;
+      }
+
+      table[class="wrap"] {
+        width: 100% !important;
+      }
+
+      td[class="wrap-cell"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="" class="background">
+	  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background: #eeeeee !important;">
+    <tr>
+      <td align="center" valign="top" width="100%" style="background-color: #eee !important;">
+        <center>
+          <table cellpadding="0" cellspacing="0" width="600" class="wrap">
+            <tr>
+              <td valign="top" class="wrap-cell" style="padding-top:30px; padding-bottom:30px; padding-left: 10px">
+                <table cellpadding="0" cellspacing="0" class="force-full-width">
+                  <tr>
+                   <td height="60" valign="top" style="background: #ffffff !important; padding-left: 10px; padding-top: 10px;text-align:center">
+                   		<img src="https://s5.postimg.org/ru77m03nb/logo.png" alt="Logo" width="400" height="69" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="body-cell">
+                      <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                        <tr>
+                          <td valign="top" style="padding: 20px; background-color:#ffffff;">
+                          Hi Prestige,<br><br>
+                          There is a new booking request for you to check out. Please confirm the dates.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                              <td align="center" style="padding:20px 0;">
+                                <center>
+                                  <table cellspacing="0" cellpadding="0" class="card">
+                                    <tr>
+                                      <td style="background-color:#286090; text-align:center; padding:10px; color:white; ">
+                                        Booking Details
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border:1px solid #286090;">
+                                        <table cellspacing="0" cellpadding="20" width="100%">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Client Name:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    jose mnuale
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Email:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    canache_39@hotmail.com
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Phone:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    04128391530
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    From:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    1
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    To:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    testing
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Passengers:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    22
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Date:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   2016/10/06
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Hour:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   18 : 17
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td width="150" class="data-heading">
+                                                    Comment:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   trew
+                                                  </td>
+                                                </tr>                                                                                               
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                              </td>
+                            </tr>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 20px;background-color:#ffffff;">
+                            Thank you!<br>
+                            Prestige Transportation <br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+Redirected to http://localhost:3000/bookings/new?notice=Booking+was+successfully+created.
+Completed 302 Found in 857ms (ActiveRecord: 126.9ms)
+
+
+Started GET "/bookings/new?notice=Booking+was+successfully+created." for 127.0.0.1 at 2016-09-27 13:19:20 -0500
+Processing by BookingsController#new as HTML
+  Parameters: {"notice"=>"Booking was successfully created."}
+  Rendered bookings/_form.html.erb (10.6ms)
+  Rendered bookings/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 1215ms (Views: 1213.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-09-27 13:19:23 -0500
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2016-09-27 13:24:34 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (40.4ms)
+  Rendered bookings/new.html.erb within layouts/application (75.5ms)
+Completed 200 OK in 5010ms (Views: 4824.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2016-09-27 13:24:40 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (11.9ms)
+  Rendered bookings/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 1781ms (Views: 1779.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-09-27 13:24:44 -0500
+
+
+Started POST "/bookings" for 127.0.0.1 at 2016-09-27 13:25:05 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sZOgRcqPVISUPJiGjcf/lMI+mowz2ZrhzUjmjEiw3n2LSvl+edttJnvmgd/af6kNvr6FKRA6VN7Fb4sCsZazFw==", "booking"=>{"name"=>"jose mnuale", "email"=>"canache_39@hotmail.com", "phone"=>"3055927754", "pickup"=>"test", "destiny"=>"paulo", "pax"=>"2", "ondate"=>"2016/09/29", "hour(1i)"=>"2016", "hour(2i)"=>"9", "hour(3i)"=>"27", "hour(4i)"=>"18", "hour(5i)"=>"24", "comment"=>"vedw"}, "commit"=>"Create Booking"}
+  [1m[36m (381.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (204.7ms)[0m  INSERT INTO `bookings` (`name`, `email`, `phone`, `pax`, `pickup`, `destiny`, `ondate`, `comment`, `hour`, `created_at`, `updated_at`) VALUES ('jose mnuale', 'canache_39@hotmail.com', '3055927754', '2', 'test', 'paulo', '2016-09-29', 'vedw', '2016-09-27 18:24:00.000000', '2016-09-27 18:25:05', '2016-09-27 18:25:05')
+  [1m[36m (104.6ms)[0m  [1mCOMMIT[0m
+  Rendered notifier/send_booking_request.html.erb within layouts/mailer (0.4ms)
+
+Notifier#send_booking_request: processed outbound mail in 27.6ms
+
+Sent mail to canache_39@hotmail.com (72.2ms)
+Date: Tue, 27 Sep 2016 13:25:06 -0500
+From: prestige-transportation@prestige.com
+To: canache_39@hotmail.com
+Message-ID: <57eab98245756_184c25f5e32c32c1@jose-Extensa-5230.mail>
+Subject: New booking request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allied</title>
+  <style type="text/css" media="screen">
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass {
+      display: block !important;
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    p,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #333333;
+      line-height: 1.5em;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    body,
+    p {
+      margin-bottom: 0;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+
+    img {
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .background {
+      background-color: #333333;
+    }
+
+    table.background {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .block-img {
+      display: block;
+      line-height: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a,
+    a:link {
+      color: #2A5DB0;
+      text-decoration: underline;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .wrap {
+      width: 600px;
+    }
+
+    .wrap-cell {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .header-cell,
+    .body-cell,
+    .footer-cell {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .header-cell {
+      background-color: #eeeeee;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .body-cell {
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-bottom: 34px;
+    }
+
+    .footer-cell {
+      background-color: #eeeeee;
+      text-align: center;
+      font-size: 13px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .card {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .data-heading {
+      text-align: right;
+      padding: 10px;
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+
+    .data-value {
+      text-align: left;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .force-full-width {
+      width: 100% !important;
+    }
+
+  </style>
+  <style type="text/css" media="only screen and (max-width: 600px)">
+    @media only screen and (max-width: 600px) {
+      body[class*="background"],
+      table[class*="background"],
+      td[class*="background"] {
+        background: #eeeeee !important;
+      }
+
+      table[class="card"] {
+        width: auto !important;
+      }
+
+      td[class="data-heading"],
+      td[class="data-value"] {
+        display: block !important;
+      }
+
+      td[class="data-heading"] {
+        text-align: left !important;
+        padding: 10px 10px 0;
+      }
+
+      table[class="wrap"] {
+        width: 100% !important;
+      }
+
+      td[class="wrap-cell"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="" class="background">
+	  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background: #eeeeee !important;">
+    <tr>
+      <td align="center" valign="top" width="100%" style="background-color: #eee !important;">
+        <center>
+          <table cellpadding="0" cellspacing="0" width="600" class="wrap">
+            <tr>
+              <td valign="top" class="wrap-cell" style="padding-top:30px; padding-bottom:30px; padding-left: 10px">
+                <table cellpadding="0" cellspacing="0" class="force-full-width">
+                  <tr>
+                   <td height="60" valign="top" style="background: #ffffff !important; padding-left: 10px; padding-top: 10px;text-align:center">
+                   		<img src="https://s5.postimg.org/ru77m03nb/logo.png" alt="Logo" width="400" height="69" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="body-cell">
+                      <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                        <tr>
+                          <td valign="top" style="padding: 20px; background-color:#ffffff;">
+                          Hi jose mnuale,<br><br>
+                          There is a new booking request for you to check out. Please confirm the dates.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                              <td align="center" style="padding:20px 0;">
+                                <center>
+                                  <table cellspacing="0" cellpadding="0" class="card">
+                                    <tr>
+                                      <td style="background-color:#286090; text-align:center; padding:10px; color:white; ">
+                                        Booking Details
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border:1px solid #286090;">
+                                        <table cellspacing="0" cellpadding="20" width="100%">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Client Name:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    jose mnuale
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Email:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    canache_39@hotmail.com
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Phone:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    3055927754
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    From:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    test
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    To:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    paulo
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Passengers:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    2
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Date:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   2016/09/29
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Hour:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   18 : 24
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td width="150" class="data-heading">
+                                                    Comment:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   vedw
+                                                  </td>
+                                                </tr>                                                                                               
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                              </td>
+                            </tr>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 20px;background-color:#ffffff;">
+                            Thank you!<br>
+                            Prestige Transportation <br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+  Rendered notifier/send_booking_request.html.erb within layouts/mailer (0.3ms)
+
+Notifier#send_booking_request: processed outbound mail in 17.2ms
+
+Sent mail to canache39@gmail.com (17.7ms)
+Date: Tue, 27 Sep 2016 13:25:06 -0500
+From: prestige-transportation@prestige.com
+To: canache39@gmail.com
+Message-ID: <57eab9825dc08_184c25f5e32c3340@jose-Extensa-5230.mail>
+Subject: New booking request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allied</title>
+  <style type="text/css" media="screen">
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass {
+      display: block !important;
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    p,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #333333;
+      line-height: 1.5em;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    body,
+    p {
+      margin-bottom: 0;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+
+    img {
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .background {
+      background-color: #333333;
+    }
+
+    table.background {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .block-img {
+      display: block;
+      line-height: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a,
+    a:link {
+      color: #2A5DB0;
+      text-decoration: underline;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .wrap {
+      width: 600px;
+    }
+
+    .wrap-cell {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .header-cell,
+    .body-cell,
+    .footer-cell {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .header-cell {
+      background-color: #eeeeee;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .body-cell {
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-bottom: 34px;
+    }
+
+    .footer-cell {
+      background-color: #eeeeee;
+      text-align: center;
+      font-size: 13px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .card {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .data-heading {
+      text-align: right;
+      padding: 10px;
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+
+    .data-value {
+      text-align: left;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .force-full-width {
+      width: 100% !important;
+    }
+
+  </style>
+  <style type="text/css" media="only screen and (max-width: 600px)">
+    @media only screen and (max-width: 600px) {
+      body[class*="background"],
+      table[class*="background"],
+      td[class*="background"] {
+        background: #eeeeee !important;
+      }
+
+      table[class="card"] {
+        width: auto !important;
+      }
+
+      td[class="data-heading"],
+      td[class="data-value"] {
+        display: block !important;
+      }
+
+      td[class="data-heading"] {
+        text-align: left !important;
+        padding: 10px 10px 0;
+      }
+
+      table[class="wrap"] {
+        width: 100% !important;
+      }
+
+      td[class="wrap-cell"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="" class="background">
+	  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background: #eeeeee !important;">
+    <tr>
+      <td align="center" valign="top" width="100%" style="background-color: #eee !important;">
+        <center>
+          <table cellpadding="0" cellspacing="0" width="600" class="wrap">
+            <tr>
+              <td valign="top" class="wrap-cell" style="padding-top:30px; padding-bottom:30px; padding-left: 10px">
+                <table cellpadding="0" cellspacing="0" class="force-full-width">
+                  <tr>
+                   <td height="60" valign="top" style="background: #ffffff !important; padding-left: 10px; padding-top: 10px;text-align:center">
+                   		<img src="https://s5.postimg.org/ru77m03nb/logo.png" alt="Logo" width="400" height="69" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="body-cell">
+                      <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                        <tr>
+                          <td valign="top" style="padding: 20px; background-color:#ffffff;">
+                          Hi Prestige,<br><br>
+                          There is a new booking request for you to check out. Please confirm the dates.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                              <td align="center" style="padding:20px 0;">
+                                <center>
+                                  <table cellspacing="0" cellpadding="0" class="card">
+                                    <tr>
+                                      <td style="background-color:#286090; text-align:center; padding:10px; color:white; ">
+                                        Booking Details
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border:1px solid #286090;">
+                                        <table cellspacing="0" cellpadding="20" width="100%">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Client Name:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    jose mnuale
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Email:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    canache_39@hotmail.com
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Phone:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    3055927754
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    From:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    test
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    To:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    paulo
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Passengers:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    2
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Date:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   2016/09/29
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Hour:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   18 : 24
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td width="150" class="data-heading">
+                                                    Comment:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   vedw
+                                                  </td>
+                                                </tr>                                                                                               
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                              </td>
+                            </tr>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 20px;background-color:#ffffff;">
+                            Thank you!<br>
+                            Prestige Transportation <br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+Redirected to http://localhost:3000/bookings/new?notice=Booking+was+successfully+created.
+Completed 302 Found in 877ms (ActiveRecord: 691.2ms)
+
+
+Started GET "/bookings/new?notice=Booking+was+successfully+created." for 127.0.0.1 at 2016-09-27 13:25:06 -0500
+Processing by BookingsController#new as HTML
+  Parameters: {"notice"=>"Booking was successfully created."}
+  Rendered bookings/_form.html.erb (7.7ms)
+  Rendered bookings/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 1375ms (Views: 1373.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-09-27 13:25:08 -0500
+
+
+Started POST "/bookings" for 127.0.0.1 at 2016-09-27 13:30:52 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sZOgRcqPVISUPJiGjcf/lMI+mowz2ZrhzUjmjEiw3n2LSvl+edttJnvmgd/af6kNvr6FKRA6VN7Fb4sCsZazFw==", "booking"=>{"name"=>"jose mnuale", "email"=>"canache_39@hotmail.com", "phone"=>"3055927754", "pickup"=>"test", "destiny"=>"paulo", "pax"=>"2", "ondate"=>"2016/09/29", "hour(1i)"=>"2016", "hour(2i)"=>"9", "hour(3i)"=>"27", "hour(4i)"=>"18", "hour(5i)"=>"24", "comment"=>"vedw"}, "commit"=>"Create Booking"}
+  [1m[35m (3.1ms)[0m  BEGIN
+  [1m[36mSQL (15.5ms)[0m  [1mINSERT INTO `bookings` (`name`, `email`, `phone`, `pax`, `pickup`, `destiny`, `ondate`, `comment`, `hour`, `created_at`, `updated_at`) VALUES ('jose mnuale', 'canache_39@hotmail.com', '3055927754', '2', 'test', 'paulo', '2016-09-29', 'vedw', '2016-09-27 18:24:00.000000', '2016-09-27 18:30:52', '2016-09-27 18:30:52')[0m
+  [1m[35m (51.5ms)[0m  COMMIT
+  Rendered notifier/send_booking_request.html.erb within layouts/mailer (0.3ms)
+
+Notifier#send_booking_request: processed outbound mail in 15.4ms
+
+Sent mail to canache_39@hotmail.com (18.2ms)
+Date: Tue, 27 Sep 2016 13:30:53 -0500
+From: prestige-transportation@prestige.com
+To: canache_39@hotmail.com
+Message-ID: <57eabadd543f_184c263b997634cd@jose-Extensa-5230.mail>
+Subject: New booking request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allied</title>
+  <style type="text/css" media="screen">
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass {
+      display: block !important;
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    p,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #333333;
+      line-height: 1.5em;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    body,
+    p {
+      margin-bottom: 0;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+
+    img {
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .background {
+      background-color: #333333;
+    }
+
+    table.background {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .block-img {
+      display: block;
+      line-height: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a,
+    a:link {
+      color: #2A5DB0;
+      text-decoration: underline;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .wrap {
+      width: 600px;
+    }
+
+    .wrap-cell {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .header-cell,
+    .body-cell,
+    .footer-cell {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .header-cell {
+      background-color: #eeeeee;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .body-cell {
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-bottom: 34px;
+    }
+
+    .footer-cell {
+      background-color: #eeeeee;
+      text-align: center;
+      font-size: 13px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .card {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .data-heading {
+      text-align: right;
+      padding: 10px;
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+
+    .data-value {
+      text-align: left;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .force-full-width {
+      width: 100% !important;
+    }
+
+  </style>
+  <style type="text/css" media="only screen and (max-width: 600px)">
+    @media only screen and (max-width: 600px) {
+      body[class*="background"],
+      table[class*="background"],
+      td[class*="background"] {
+        background: #eeeeee !important;
+      }
+
+      table[class="card"] {
+        width: auto !important;
+      }
+
+      td[class="data-heading"],
+      td[class="data-value"] {
+        display: block !important;
+      }
+
+      td[class="data-heading"] {
+        text-align: left !important;
+        padding: 10px 10px 0;
+      }
+
+      table[class="wrap"] {
+        width: 100% !important;
+      }
+
+      td[class="wrap-cell"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="" class="background">
+	  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background: #eeeeee !important;">
+    <tr>
+      <td align="center" valign="top" width="100%" style="background-color: #eee !important;">
+        <center>
+          <table cellpadding="0" cellspacing="0" width="600" class="wrap">
+            <tr>
+              <td valign="top" class="wrap-cell" style="padding-top:30px; padding-bottom:30px; padding-left: 10px">
+                <table cellpadding="0" cellspacing="0" class="force-full-width">
+                  <tr>
+                   <td height="60" valign="top" style="background: #ffffff !important; padding-left: 10px; padding-top: 10px;text-align:center">
+                   		<img src="https://s5.postimg.org/ru77m03nb/logo.png" alt="Logo" width="400" height="69" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="body-cell">
+                      <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                        <tr>
+                          <td valign="top" style="padding: 20px; background-color:#ffffff;">
+                          Hi jose mnuale,<br><br>
+                          There is a new booking request for you to check out. Please confirm the dates.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                              <td align="center" style="padding:20px 0;">
+                                <center>
+                                  <table cellspacing="0" cellpadding="0" class="card">
+                                    <tr>
+                                      <td style="background-color:#286090; text-align:center; padding:10px; color:white; ">
+                                        Booking Details
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border:1px solid #286090;">
+                                        <table cellspacing="0" cellpadding="20" width="100%">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Client Name:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    jose mnuale
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Email:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    canache_39@hotmail.com
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Phone:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    3055927754
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    From:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    test
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    To:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    paulo
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Passengers:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    2
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Date:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   2016/09/29
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Hour:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   18 : 24
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td width="150" class="data-heading">
+                                                    Comment:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   vedw
+                                                  </td>
+                                                </tr>                                                                                               
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                              </td>
+                            </tr>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 20px;background-color:#ffffff;">
+                            Thank you!<br>
+                            Prestige Transportation <br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+  Rendered notifier/send_booking_request.html.erb within layouts/mailer (0.4ms)
+
+Notifier#send_booking_request: processed outbound mail in 24.9ms
+
+Sent mail to canache39@gmail.com (12.6ms)
+Date: Tue, 27 Sep 2016 13:30:53 -0500
+From: prestige-transportation@prestige.com
+To: canache39@gmail.com
+Message-ID: <57eabadd12712_184c263b997635a3@jose-Extensa-5230.mail>
+Subject: New booking request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allied</title>
+  <style type="text/css" media="screen">
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass {
+      display: block !important;
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    p,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #333333;
+      line-height: 1.5em;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    body,
+    p {
+      margin-bottom: 0;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+
+    img {
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .background {
+      background-color: #333333;
+    }
+
+    table.background {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .block-img {
+      display: block;
+      line-height: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a,
+    a:link {
+      color: #2A5DB0;
+      text-decoration: underline;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .wrap {
+      width: 600px;
+    }
+
+    .wrap-cell {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .header-cell,
+    .body-cell,
+    .footer-cell {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .header-cell {
+      background-color: #eeeeee;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .body-cell {
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-bottom: 34px;
+    }
+
+    .footer-cell {
+      background-color: #eeeeee;
+      text-align: center;
+      font-size: 13px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .card {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .data-heading {
+      text-align: right;
+      padding: 10px;
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+
+    .data-value {
+      text-align: left;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .force-full-width {
+      width: 100% !important;
+    }
+
+  </style>
+  <style type="text/css" media="only screen and (max-width: 600px)">
+    @media only screen and (max-width: 600px) {
+      body[class*="background"],
+      table[class*="background"],
+      td[class*="background"] {
+        background: #eeeeee !important;
+      }
+
+      table[class="card"] {
+        width: auto !important;
+      }
+
+      td[class="data-heading"],
+      td[class="data-value"] {
+        display: block !important;
+      }
+
+      td[class="data-heading"] {
+        text-align: left !important;
+        padding: 10px 10px 0;
+      }
+
+      table[class="wrap"] {
+        width: 100% !important;
+      }
+
+      td[class="wrap-cell"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="" class="background">
+	  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background: #eeeeee !important;">
+    <tr>
+      <td align="center" valign="top" width="100%" style="background-color: #eee !important;">
+        <center>
+          <table cellpadding="0" cellspacing="0" width="600" class="wrap">
+            <tr>
+              <td valign="top" class="wrap-cell" style="padding-top:30px; padding-bottom:30px; padding-left: 10px">
+                <table cellpadding="0" cellspacing="0" class="force-full-width">
+                  <tr>
+                   <td height="60" valign="top" style="background: #ffffff !important; padding-left: 10px; padding-top: 10px;text-align:center">
+                   		<img src="https://s5.postimg.org/ru77m03nb/logo.png" alt="Logo" width="400" height="69" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="body-cell">
+                      <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                        <tr>
+                          <td valign="top" style="padding: 20px; background-color:#ffffff;">
+                          Hi Prestige,<br><br>
+                          There is a new booking request for you to check out. Please confirm the dates.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                              <td align="center" style="padding:20px 0;">
+                                <center>
+                                  <table cellspacing="0" cellpadding="0" class="card">
+                                    <tr>
+                                      <td style="background-color:#286090; text-align:center; padding:10px; color:white; ">
+                                        Booking Details
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border:1px solid #286090;">
+                                        <table cellspacing="0" cellpadding="20" width="100%">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Client Name:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    jose mnuale
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Email:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    canache_39@hotmail.com
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Phone:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    3055927754
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    From:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    test
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    To:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    paulo
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Passengers:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    2
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Date:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   2016/09/29
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Hour:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   18 : 24
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td width="150" class="data-heading">
+                                                    Comment:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   vedw
+                                                  </td>
+                                                </tr>                                                                                               
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                              </td>
+                            </tr>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 20px;background-color:#ffffff;">
+                            Thank you!<br>
+                            Prestige Transportation <br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+Redirected to http://localhost:3000/bookings/new?notice=Booking+was+successfully+created.
+Completed 302 Found in 176ms (ActiveRecord: 70.1ms)
+
+
+Started GET "/bookings/new?notice=Booking+was+successfully+created." for 127.0.0.1 at 2016-09-27 13:30:53 -0500
+Processing by BookingsController#new as HTML
+  Parameters: {"notice"=>"Booking was successfully created."}
+  Rendered bookings/_form.html.erb (10.9ms)
+  Rendered bookings/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 1578ms (Views: 1576.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-09-27 13:30:55 -0500
+
+
+Started POST "/bookings" for 127.0.0.1 at 2016-09-27 13:32:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sZOgRcqPVISUPJiGjcf/lMI+mowz2ZrhzUjmjEiw3n2LSvl+edttJnvmgd/af6kNvr6FKRA6VN7Fb4sCsZazFw==", "booking"=>{"name"=>"jose mnuale", "email"=>"canache_39@hotmail.com", "phone"=>"3055927754", "pickup"=>"test", "destiny"=>"paulo", "pax"=>"2", "ondate"=>"2016/09/29", "hour(1i)"=>"2016", "hour(2i)"=>"9", "hour(3i)"=>"27", "hour(4i)"=>"18", "hour(5i)"=>"24", "comment"=>"vedw"}, "commit"=>"Create Booking"}
+  [1m[35m (2.6ms)[0m  BEGIN
+  [1m[36mSQL (23.4ms)[0m  [1mINSERT INTO `bookings` (`name`, `email`, `phone`, `pax`, `pickup`, `destiny`, `ondate`, `comment`, `hour`, `created_at`, `updated_at`) VALUES ('jose mnuale', 'canache_39@hotmail.com', '3055927754', '2', 'test', 'paulo', '2016-09-29', 'vedw', '2016-09-27 18:24:00.000000', '2016-09-27 18:32:09', '2016-09-27 18:32:09')[0m
+  [1m[35m (67.5ms)[0m  COMMIT
+  Rendered notifier/send_booking_request.html.erb within layouts/mailer (5.2ms)
+
+Notifier#send_booking_request: processed outbound mail in 524.8ms
+
+Sent mail to canache_39@hotmail.com (3439.2ms)
+Date: Tue, 27 Sep 2016 13:32:10 -0500
+From: prestige-transportation@prestige.com
+To: canache_39@hotmail.com
+Message-ID: <57eabb2a42f76_1957598cde4466c5@jose-Extensa-5230.mail>
+Subject: New booking request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allied</title>
+  <style type="text/css" media="screen">
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass {
+      display: block !important;
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    p,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #333333;
+      line-height: 1.5em;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    body,
+    p {
+      margin-bottom: 0;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+
+    img {
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .background {
+      background-color: #333333;
+    }
+
+    table.background {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .block-img {
+      display: block;
+      line-height: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a,
+    a:link {
+      color: #2A5DB0;
+      text-decoration: underline;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .wrap {
+      width: 600px;
+    }
+
+    .wrap-cell {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .header-cell,
+    .body-cell,
+    .footer-cell {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .header-cell {
+      background-color: #eeeeee;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .body-cell {
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-bottom: 34px;
+    }
+
+    .footer-cell {
+      background-color: #eeeeee;
+      text-align: center;
+      font-size: 13px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .card {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .data-heading {
+      text-align: right;
+      padding: 10px;
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+
+    .data-value {
+      text-align: left;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .force-full-width {
+      width: 100% !important;
+    }
+
+  </style>
+  <style type="text/css" media="only screen and (max-width: 600px)">
+    @media only screen and (max-width: 600px) {
+      body[class*="background"],
+      table[class*="background"],
+      td[class*="background"] {
+        background: #eeeeee !important;
+      }
+
+      table[class="card"] {
+        width: auto !important;
+      }
+
+      td[class="data-heading"],
+      td[class="data-value"] {
+        display: block !important;
+      }
+
+      td[class="data-heading"] {
+        text-align: left !important;
+        padding: 10px 10px 0;
+      }
+
+      table[class="wrap"] {
+        width: 100% !important;
+      }
+
+      td[class="wrap-cell"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="" class="background">
+	  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background: #eeeeee !important;">
+    <tr>
+      <td align="center" valign="top" width="100%" style="background-color: #eee !important;">
+        <center>
+          <table cellpadding="0" cellspacing="0" width="600" class="wrap">
+            <tr>
+              <td valign="top" class="wrap-cell" style="padding-top:30px; padding-bottom:30px; padding-left: 10px">
+                <table cellpadding="0" cellspacing="0" class="force-full-width">
+                  <tr>
+                   <td height="60" valign="top" style="background: #ffffff !important; padding-left: 10px; padding-top: 10px;text-align:center">
+                   		<img src="https://s5.postimg.org/ru77m03nb/logo.png" alt="Logo" width="400" height="69" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="body-cell">
+                      <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                        <tr>
+                          <td valign="top" style="padding: 20px; background-color:#ffffff;">
+                          Hi jose mnuale,<br><br>
+                          There is a new booking request for you to check out. Please confirm the dates.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                              <td align="center" style="padding:20px 0;">
+                                <center>
+                                  <table cellspacing="0" cellpadding="0" class="card">
+                                    <tr>
+                                      <td style="background-color:#286090; text-align:center; padding:10px; color:white; ">
+                                        Booking Details
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border:1px solid #286090;">
+                                        <table cellspacing="0" cellpadding="20" width="100%">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Client Name:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    jose mnuale
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Email:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    canache_39@hotmail.com
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Phone:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    3055927754
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    From:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    test
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    To:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    paulo
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Passengers:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    2
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Date:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   2016/09/29
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Hour:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   18 : 24
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td width="150" class="data-heading">
+                                                    Comment:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   vedw
+                                                  </td>
+                                                </tr>                                                                                               
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                              </td>
+                            </tr>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 20px;background-color:#ffffff;">
+                            Thank you!<br>
+                            Prestige Transportation <br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+  Rendered notifier/send_booking_request.html.erb within layouts/mailer (8.3ms)
+
+Notifier#send_booking_request: processed outbound mail in 21.8ms
+
+Sent mail to canache39@gmail.com (2350.3ms)
+Date: Tue, 27 Sep 2016 13:32:13 -0500
+From: prestige-transportation@prestige.com
+To: canache39@gmail.com
+Message-ID: <57eabb2db2f66_1957598cde44676d@jose-Extensa-5230.mail>
+Subject: New booking request
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allied</title>
+  <style type="text/css" media="screen">
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass {
+      display: block !important;
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    p,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #333333;
+      line-height: 1.5em;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    body,
+    p {
+      margin-bottom: 0;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+
+    img {
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .background {
+      background-color: #333333;
+    }
+
+    table.background {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .block-img {
+      display: block;
+      line-height: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a,
+    a:link {
+      color: #2A5DB0;
+      text-decoration: underline;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .wrap {
+      width: 600px;
+    }
+
+    .wrap-cell {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .header-cell,
+    .body-cell,
+    .footer-cell {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .header-cell {
+      background-color: #eeeeee;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .body-cell {
+      background-color: #ffffff;
+      padding-top: 30px;
+      padding-bottom: 34px;
+    }
+
+    .footer-cell {
+      background-color: #eeeeee;
+      text-align: center;
+      font-size: 13px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .card {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .data-heading {
+      text-align: right;
+      padding: 10px;
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+
+    .data-value {
+      text-align: left;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .force-full-width {
+      width: 100% !important;
+    }
+
+  </style>
+  <style type="text/css" media="only screen and (max-width: 600px)">
+    @media only screen and (max-width: 600px) {
+      body[class*="background"],
+      table[class*="background"],
+      td[class*="background"] {
+        background: #eeeeee !important;
+      }
+
+      table[class="card"] {
+        width: auto !important;
+      }
+
+      td[class="data-heading"],
+      td[class="data-value"] {
+        display: block !important;
+      }
+
+      td[class="data-heading"] {
+        text-align: left !important;
+        padding: 10px 10px 0;
+      }
+
+      table[class="wrap"] {
+        width: 100% !important;
+      }
+
+      td[class="wrap-cell"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="" class="background">
+	  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background: #eeeeee !important;">
+    <tr>
+      <td align="center" valign="top" width="100%" style="background-color: #eee !important;">
+        <center>
+          <table cellpadding="0" cellspacing="0" width="600" class="wrap">
+            <tr>
+              <td valign="top" class="wrap-cell" style="padding-top:30px; padding-bottom:30px; padding-left: 10px">
+                <table cellpadding="0" cellspacing="0" class="force-full-width">
+                  <tr>
+                   <td height="60" valign="top" style="background: #ffffff !important; padding-left: 10px; padding-top: 10px;text-align:center">
+                   		<img src="https://s5.postimg.org/ru77m03nb/logo.png" alt="Logo" width="400" height="69" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="body-cell">
+                      <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                        <tr>
+                          <td valign="top" style="padding: 20px; background-color:#ffffff;">
+                          Hi Prestige,<br><br>
+                          There is a new booking request for you to check out. Please confirm the dates.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                              <td align="center" style="padding:20px 0;">
+                                <center>
+                                  <table cellspacing="0" cellpadding="0" class="card">
+                                    <tr>
+                                      <td style="background-color:#286090; text-align:center; padding:10px; color:white; ">
+                                        Booking Details
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border:1px solid #286090;">
+                                        <table cellspacing="0" cellpadding="20" width="100%">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Client Name:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    jose mnuale
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Email:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    canache_39@hotmail.com
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Phone:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    3055927754
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    From:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    test
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    To:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    paulo
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Passengers:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    2
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Date:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   2016/09/29
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Hour:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   18 : 24
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td width="150" class="data-heading">
+                                                    Comment:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   vedw
+                                                  </td>
+                                                </tr>                                                                                               
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                              </td>
+                            </tr>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 20px;background-color:#ffffff;">
+                            Thank you!<br>
+                            Prestige Transportation <br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+Redirected to http://localhost:3000/bookings/new?notice=Booking+was+successfully+created.
+Completed 302 Found in 6617ms (ActiveRecord: 127.5ms)
+
+
+Started GET "/bookings/new?notice=Booking+was+successfully+created." for 127.0.0.1 at 2016-09-27 13:32:16 -0500
+Processing by BookingsController#new as HTML
+  Parameters: {"notice"=>"Booking was successfully created."}
+  Rendered bookings/_form.html.erb (123.3ms)
+  Rendered bookings/new.html.erb within layouts/application (148.6ms)
+Completed 200 OK in 3276ms (Views: 3266.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-09-27 13:32:21 -0500
