@@ -1,0 +1,143 @@
+  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="background: #eeeeee !important;">
+    <tr>
+      <td align="center" valign="top" width="100%" style="background-color: #eee !important;">
+        <center>
+          <table cellpadding="0" cellspacing="0" width="600" class="wrap">
+            <tr>
+              <td valign="top" class="wrap-cell" style="padding-top:30px; padding-bottom:30px; padding-left: 10px">
+                <table cellpadding="0" cellspacing="0" class="force-full-width">
+                  <tr>
+                   <td height="60" valign="top" style="background: #ffffff !important; padding-left: 10px; padding-top: 10px;text-align:center">
+                   		<%= image_tag("https://s5.postimg.org/ru77m03nb/logo.png", size: "400x69") %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="body-cell">
+                      <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                        <tr>
+                          <td valign="top" style="padding: 20px; background-color:#ffffff;">
+                          Hi <%= @gretings %>,<br><br>
+                          There is a new booking request for you to check out. Please confirm the dates.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                            <tr>
+                              <td align="center" style="padding:20px 0;">
+                                <center>
+                                  <table cellspacing="0" cellpadding="0" class="card">
+                                    <tr>
+                                      <td style="background-color:#286090; text-align:center; padding:10px; color:white; ">
+                                        Booking Details
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="border:1px solid #286090;">
+                                        <table cellspacing="0" cellpadding="20" width="100%">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Client Name:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    <%= @booking_data[:name] %>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Email:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    <%= @booking_data[:email]%>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Phone:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    <%= @booking_data[:phone] %>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    From:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    <%= @booking_data[:pickup] %>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    To:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    <%= @booking_data[:destiny] %>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Passengers:
+                                                  </td>
+                                                  <td class="data-value">
+                                                    <%= @booking_data[:pax] %>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Date:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   <%= @booking_data[:ondate] %>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="150" class="data-heading">
+                                                    Hour:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   <%= @booking_data['hour(4i)'] %> : <%= @booking_data['hour(5i)'] %>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                <td width="150" class="data-heading">
+                                                    Comment:
+                                                  </td>
+                                                  <td class="data-value">
+                                                   <%= @booking_data[:comment] %>
+                                                  </td>
+                                                </tr>                                                                                               
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                              </td>
+                            </tr>
+                          </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 20px;background-color:#ffffff;">
+                            Thank you!<br>
+                            Prestige Transportation <br>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>

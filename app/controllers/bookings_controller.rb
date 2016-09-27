@@ -25,11 +25,15 @@ class BookingsController < ApplicationController
   # POST /bookings.json
   def create
     @booking = Booking.new(booking_params)
-
       if @booking.save
+        client = params[:booking][:email]
+        prestige = "canache39@gmail.com"
+        Notifier.send_booking_request(client, params[:booking][:name], params[:booking]).deliver_now
+        Notifier.send_booking_request(prestige, "Prestige", params[:booking]).deliver_now
+        
         redirect_to :action => 'new', notice: "Booking was successfully created."
       else
-         redirect_to :action => 'new', alert: "Something wrong happened, please try again"
+        redirect_to :action => 'new', alert: "Something wrong happened, please try again"
       end
   end
 
@@ -65,6 +69,6 @@ class BookingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def booking_params
-      params.require(:booking).permit(:name, :email, :phone, :pax, :pickup, :destiny, :hour, :ondate)
+      params.require(:booking).permit(:name, :email, :phone, :pax, :pickup, :destiny, :hour, :ondate, :comment)
     end
 end
