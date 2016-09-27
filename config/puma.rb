@@ -13,3 +13,4 @@ on_worker_boot do
     config['pool'] = ENV['DB_POOL'] || 5
     ActiveRecord::Base.establish_connection(config)
   end
+end
