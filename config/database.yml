@@ -14,11 +14,18 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password: abc123
+  password: 12345678
   socket: /var/run/mysqld/mysqld.sock
+  # adapter: mysql2
+  # encoding: utf8
+  # pool: 5
+  # host: 97.74.31.6
+  # username: prestigeproduc
+  # password: pr3sT!ge
 
 development:
   <<: *default
+  #database: prestigeproduc
   database: prestige_webapp_development
 
 # Warning: The database defined as "test" will be erased and
@@ -48,7 +55,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: prestige_webapp_production
-  username: prestige_webapp
-  password: <%= ENV['PRESTIGE_WEBAPP_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  host: 97.74.31.6
+  username: prestigeproduc
+  password: pr3sT!ge
+  database: prestigeproduc

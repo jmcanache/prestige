@@ -46567,3 +46567,62 @@ Completed 200 OK in 1138ms (Views: 1136.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-08-03 20:11:12 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-27 10:58:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (81.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/jose/.rvm/gems/ruby-2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 109ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2016-09-27 10:58:49 -0500
+Processing by BookingsController#new as HTML
+  Rendered bookings/_form.html.erb (140.7ms)
+  Rendered bookings/new.html.erb within layouts/application (246.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /home/jose/workspace/prestige/prestige_webapp/app/assets/stylesheets/bookings.css.scss to /home/jose/workspace/prestige/prestige_webapp/app/assets/stylesheets/bookings.scss. (called from _app_views_layouts_application_html_erb__990941585_88089800 at /home/jose/workspace/prestige/prestige_webapp/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /home/jose/workspace/prestige/prestige_webapp/app/assets/stylesheets/bookings.css.scss to /home/jose/workspace/prestige/prestige_webapp/app/assets/stylesheets/bookings.scss. (called from _app_views_layouts_application_html_erb__990941585_88089800 at /home/jose/workspace/prestige/prestige_webapp/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 20015ms (Views: 19982.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-e237e7ad765af70412a9fd9e20eec3c902597eff3de204ea0449be6b8ced3d7a.css?body=1" for 127.0.0.1 at 2016-09-27 10:59:10 -0500
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-09-27 10:59:12 -0500
+
+
+Started POST "/bookings" for 127.0.0.1 at 2016-09-27 10:59:51 -0500
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZwAu64etgC3ggs+xOyNoVTJNPxt+64RALP0FCXtsLx9d2XfQNPm5jw9Y1uhsmz7MTs0gvl0ISn8k2miHgkpCdQ==", "booking"=>{"name"=>"jose mnuale", "email"=>"canache_39@hotmail.com", "phone"=>"04128391530", "pickup"=>"test", "destiny"=>"testing", "pax"=>"44", "ondate"=>"2016/10/04", "hour(1i)"=>"2016", "hour(2i)"=>"9", "hour(3i)"=>"27", "hour(4i)"=>"04", "hour(5i)"=>"44", "comment"=>"44444"}, "commit"=>"Create Booking"}
+Unpermitted parameter: comment
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (143.4ms)[0m  [1mINSERT INTO `bookings` (`name`, `email`, `phone`, `pax`, `pickup`, `destiny`, `ondate`, `hour`, `created_at`, `updated_at`) VALUES ('jose mnuale', 'canache_39@hotmail.com', '04128391530', '44', 'test', 'testing', '2016-10-04', '2016-09-27 04:44:00.000000', '2016-09-27 15:59:51', '2016-09-27 15:59:51')[0m
+  [1m[35m (48.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/bookings/new?notice=Booking+was+successfully+created.
+Completed 302 Found in 204ms (ActiveRecord: 192.5ms)
+
+
+Started GET "/bookings/new?notice=Booking+was+successfully+created." for 127.0.0.1 at 2016-09-27 10:59:52 -0500
+Processing by BookingsController#new as HTML
+  Parameters: {"notice"=>"Booking was successfully created."}
+  Rendered bookings/_form.html.erb (9.9ms)
+  Rendered bookings/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 1318ms (Views: 1316.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2016-09-27 10:59:54 -0500
+
+
+Started GET "/bookings" for 127.0.0.1 at 2016-09-27 11:00:01 -0500
+Processing by BookingsController#index as HTML
+  [1m[36mBooking Load (0.8ms)[0m  [1mSELECT `bookings`.* FROM `bookings`[0m
+  Rendered bookings/index.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 1305ms (Views: 1303.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bookings/37" for 127.0.0.1 at 2016-09-27 11:01:08 -0500
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mBooking Load (12.4ms)[0m  SELECT  `bookings`.* FROM `bookings` WHERE `bookings`.`id` = 37 LIMIT 1
+  Rendered bookings/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1013ms (Views: 950.1ms | ActiveRecord: 12.4ms)
