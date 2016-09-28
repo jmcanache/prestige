@@ -1,6 +1,10 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: [:show, :edit, :update, :destroy]
 
+  def home
+    render layout: "application2"
+  end
+
   # GET /bookings
   # GET /bookings.json
   def index
@@ -58,6 +62,19 @@ class BookingsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to bookings_url, notice: 'Booking was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def contact_email
+    recipient = "canache39@gmail.com"
+    if Contact.send_form(recipient, params).deliver_now
+      respond_to do |format|
+        format.json { render json: 1 }
+      end
+    else
+      respond_to do |format|
+        format.json { render json: 0 }
+      end
     end
   end
 
