@@ -1,5 +1,118 @@
-<div class="header-top-bar-container clearfix">
-	<p>Prestige</p>
+<style type="text/css">
+	h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Open Sans';
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+h2
+{
+	font-size: 33px;
+	line-height: 44px;
+	font-weight: 300;
+}
+@media screen and (max-width:767px)
+{
+	/* --- headers --- */
+	h2
+	{
+		font-size: 24px;
+		line-height: 36px;
+	}
+}
+@media screen and (max-width:479px)
+{	
+	h2
+	{
+		font-size: 21px;
+		line-height: 32px;
+	}
+}
+</style>
+<div class="site-container">
+	<div class="header-container">
+	<!--<div class="header-container sticky">-->
+		<div class="vertical-align-table column-1-1">
+			<div class="header clearfix">
+				<div class="logo vertical-align-cell">
+					<%= link_to (image_tag("logo1.png", alt: "logo")), root_path %>
+				</div>
+				<a href="#" class="mobile-menu-switch vertical-align-cell">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</a>
+				<div class="menu-container clearfix vertical-align-cell">
+					<nav>
+						<ul class="sf-menu">
+							<li>
+								<%= link_to "Home", root_path %>
+							</li>
+							<li>
+								<a href="#" title="Services">
+									Services
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Gallery">
+									About US
+								</a>
+							</li>
+							<li class="selected">
+								<%= link_to "Book a transfer",  {controller: 'bookings', action: 'new'}, 'data-no-turbolink' => true%>
+							</li>
+							<li>
+								<a href="#" title="Blog">
+									Gallery
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Appointment">
+									Quote
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="mobile-menu-container">
+						<div class="mobile-menu-divider"></div>
+						<nav>
+							<ul class="mobile-menu">
+								<li>
+									<%= link_to "Home", root_path %>
+								</li>
+								<li>
+									<a href="#" title="Services">
+										Services
+									</a>
+								</li>
+								<li>
+									<a href="#" title="Gallery">
+										About Us
+									</a>
+								</li>
+								<li class="selected">
+									<%= link_to "Book a transfer",  {controller: 'bookings', action: 'new'}, 'data-no-turbolink' => true%>
+								</li>
+								<li>
+									<a href="#" title="Blog">
+										Gallery
+									</a>
+								</li>
+								<li>
+									<a href="#" title="Appointment">
+										Quote
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>						
+				</div>
+			</div>
+		</div>
+	</div><!-- Slider Revolution -->
 </div>
 
 <div class="container-fluid">
