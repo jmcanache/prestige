@@ -42,12 +42,9 @@ body{
     left: 50%;
     margin-top: -100px;
     margin-left: -150px;
-    background-color: #dff0d8;
     border-radius: 4px;
     text-align: center;
     z-index: 11;
-    border-color: #d6e9c6;
-    color: #3c763d;
     padding: 15px;
 }
 
@@ -77,13 +74,13 @@ input, textarea, select {
 }
 
 select{
-	width: 46%;
-	background: white;
+    width: 46%;
+    background: white;
 }
 
 .submit{
-	display: block;
-	background: #1e69b8 none repeat scroll 0 0;
+    display: block;
+    background: #1e69b8 none repeat scroll 0 0;
     border: medium none;
     color: #fff;
     cursor: pointer;
@@ -112,7 +109,7 @@ select{
     border-radius: 0px;
 }
 
-.field{	
+.field{ 
     margin-top: 20px;
 }
 

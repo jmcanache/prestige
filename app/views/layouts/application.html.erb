@@ -33,6 +33,7 @@
         <%end%>
 
         <% if !params[:alert].blank? %>
+        	<div class="overlay"></div>
           <div style="padding-top: 1%">
             <div class="alert alert-danger fade in">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -54,6 +55,7 @@
         <%end%>
 
         <% if !params[:warning].blank? %>
+        	<div class="overlay"></div>
           <div style="padding-top: 1%">
             <div class="alert alert-warning">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
