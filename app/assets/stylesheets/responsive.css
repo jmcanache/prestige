@@ -62,7 +62,6 @@
 	}
 	/* --- containers --- */
 	.header-top-bar,
-	.header,
 	.row,
 	.announcement
 	{
@@ -71,10 +70,6 @@
 	.header-container
 	{
 		padding: 26px 0 13px;
-	}
-	.header .logo
-	{
-		width: auto;
 	}
 	.header-container.sticky.move
 	{
@@ -93,17 +88,9 @@
 	{	
 		width: 450px;
 	}
-	/* --- menu --- */
-	.menu-container
-	{
-		float: left;
-		clear: both;
-		width: 100%;
-		margin-top: 20px;
-	}
 	.menu-container nav
 	{
-		float: left;
+		float: right;
 	}
 	.sf-menu li a, .sf-menu li a:visited
 	{
@@ -454,6 +441,13 @@
 	.header .logo
 	{
 		width: 432px;
+	}
+	.menu-container
+	{
+		float: left;
+		clear: both;
+		width: 100%;
+		margin-top: 20px;
 	}
 	.re-smart-column .re-smart-column-wrapper
 	{
@@ -1172,6 +1166,26 @@
 	.ui-datepicker
 	{
 		width: 268px;
+	}
+}
+@media(max-width: 500px){
+	.background-2{
+		display: block;
+	}
+	.revolution-slider-container{
+		display: none;
+	}
+	.second-back{
+		text-align: center;
+		padding-top: 50px;
+    	padding-bottom: 50px;
+	}
+	.second-back p{
+		font-size: 8vw;
+	    color: white;
+	    font-weight: bold;
+	    line-height: 50px;
+	    padding: 0;
 	}
 }
 @media screen and (max-device-width: 480px)

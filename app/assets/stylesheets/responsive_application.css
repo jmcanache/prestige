@@ -7,7 +7,6 @@
 	}
 	/* --- containers --- */
 	.header-top-bar,
-	.header,
 	.announcement
 	{
 		width: 750px;
@@ -15,10 +14,6 @@
 	.header-container
 	{
 		padding: 26px 0 13px;
-	}
-	.header .logo
-	{
-		width: auto;
 	}
 	.header-container.sticky.move
 	{
@@ -38,16 +33,9 @@
 		width: 450px;
 	}
 	/* --- menu --- */
-	.menu-container
-	{
-		float: left;
-		clear: both;
-		width: 100%;
-		margin-top: 20px;
-	}
 	.menu-container nav
 	{
-		float: left;
+		float: right;
 	}
 	.sf-menu li a, .sf-menu li a:visited
 	{
@@ -129,6 +117,13 @@
 	.menu-container
 	{
 		width: 462px;
+	}
+	.menu-container
+	{
+		float: left;
+		clear: both;
+		width: 100%;
+		margin-top: 20px;
 	}
 	.header-container,
 	.header-container.sticky.move

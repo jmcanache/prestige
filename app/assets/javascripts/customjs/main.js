@@ -869,4 +869,29 @@ $(document).on('page:load ready', function(){
       autoclose: true,
       startDate: "t",
     });
+
+    $(".i-services").click(function (){
+    	console.log("wat?");
+        $('html, body').animate({
+            scrollTop: $("#our-services").offset().top
+        }, 2000);
+    });
+
+    $(".i-about").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#o-about").offset().top
+        }, 2000);
+    });
+
+    $(".i-gallery").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#o-gallery").offset().top
+        }, 2000);
+    });
+
+    $(".i-quote").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#o-quote").offset().top
+        }, 2000);
+    });
 });

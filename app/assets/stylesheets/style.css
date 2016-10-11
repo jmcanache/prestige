@@ -470,13 +470,13 @@ h3 .more
 .header-top-bar,
 .header
 {
-	width: 1170px;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
 .header .logo
 {
-	width: 370px;
+	width: 10%;
 	/*float: left;*/
 }
 .header h1
@@ -553,7 +553,7 @@ h3 .more
 /* --- menu --- */
 .menu-container
 {
-	width: 800px;
+	width: 50%;
 	/*float: right;*/
 }
 .menu-container nav
@@ -909,6 +909,7 @@ body.overlay .background-overlay
 {
 	display: none;
 }
+
 @media all and (min-width:0\0) and (min-resolution: .001dpcm)
 {
     .flex-hide
@@ -1510,6 +1511,13 @@ body.overlay .background-overlay
 .background-1
 {
 	background-image: url('/assets/1.png');
+	background-size: cover;
+	background-position: 0px center;
+}
+.background-2
+{
+	display: none;
+	background-image: url('/assets/3.jpg');
 	background-size: cover;
 	background-position: 0px center;
 }
