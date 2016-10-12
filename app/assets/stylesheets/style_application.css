@@ -1011,6 +1011,9 @@ body.overlay .background-overlay
 .sf-menu li a{
 	text-decoration: none;
 }
+#back-img{
+	display: block;
+}
 
 @media (max-width: 767px){
 	.margin-top-xs{

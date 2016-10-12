@@ -91,6 +91,14 @@
 	{
 		width: 262px;
 	}
+	select{
+		width: 45%;
+	}
+}
+@media(max-width: 991px){
+	select{
+		width: 48%;
+	}
 }
 @media screen and (max-width:767px)
 {
@@ -191,6 +199,15 @@
 	.vertical-menu li a
 	{
 		padding: 17px 18px 18px 19px;
+	}
+	.sbt-button{
+		width: 100% !important;
+	}
+	select{
+		width: 46%;
+	}
+	#back-img{
+		display: none;
 	}
 }
 @media screen and (max-width:479px)

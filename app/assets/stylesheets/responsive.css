@@ -1,3 +1,8 @@
+@media(min-width: 1200px){
+	.tp-revslider-mainul{
+		background-position: center;
+	}
+}
 @media screen and (max-width:1189px)
 {
 	/* --- site container --- */
