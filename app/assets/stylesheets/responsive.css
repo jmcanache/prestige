@@ -67,6 +67,9 @@
 	{
 		width: 750px;
 	}
+	#o-gallery .row{
+		width: 90%;
+	}
 	.header-container
 	{
 		padding: 26px 0 13px;
@@ -267,7 +270,10 @@
 	/* --- services --- */
 	.services-list li
 	{
-		width: 250px;
+		width: 33.3%;
+	}
+	.services-list li img{
+		width: 100%;
 	}
 	.services-list li h4.box-header::after
 	{
@@ -653,7 +659,11 @@
 	/* --- services --- */
 	.services-list li
 	{
-		width: 231px;
+		width: 100%;
+	}
+	.services-list li img
+	{
+		width: 100%;
 	}
 	.services-list li h4
 	{
@@ -1029,7 +1039,7 @@
 	/* --- services --- */
 	.services-list li
 	{
-		width: 300px;
+		width: 100%;
 	}
 	.services-list li h4,
 	.services-list li p,
