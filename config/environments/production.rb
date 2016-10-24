@@ -79,15 +79,15 @@ Rails.application.configure do
 
   config.action_mailer.perform_deliveries = true
 
-  config.action_mailer.default_url_options = { :host => 'http://alliedwebapp.paradas.co/'}
-
+  config.action_mailer.default_url_options = { :host => 'http://pts5star.com'}
+  
   ActionMailer::Base.smtp_settings = {  
     :address              => "smtp.mailgun.org",  
     :port                 => 587,  
-    :domain               => "sandbox134c85890b394c2199cb4ccdc462300c.mailgun.org",  
-    :user_name            => "postmaster@sandbox134c85890b394c2199cb4ccdc462300c.mailgun.org",  
-    :password             => "3f9d9a02bdc3f06d8be51198e512d22a",  
+    :domain               => "sandbox1b3a7eeb83774f8b8b0630da78c1cf79.mailgun.org",  
+    :user_name            => "postmaster@sandbox1b3a7eeb83774f8b8b0630da78c1cf79.mailgun.org",  
+    :password             => "8cddd9e9b889b17a313e90b4786eeb40",  
     :authentication       => "plain",  
     :enable_starttls_auto => true 
-  }
+  }  
 end

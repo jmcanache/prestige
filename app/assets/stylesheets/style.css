@@ -192,6 +192,9 @@ img.radius
 {
 	text-align: center;
 }
+.align-justify{
+	text-align: justify;
+}
 .align-left
 {
 	text-align: left;
@@ -1048,6 +1051,9 @@ body.overlay .background-overlay
 	line-height: 1;
 }
 /* --- services --- */
+.vehicles-50{
+	width: 45%;
+}
 .services-list li
 {
 	float: left;

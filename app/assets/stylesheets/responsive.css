@@ -662,6 +662,10 @@
 		height: auto;
 	}
 	/* --- services --- */
+	.vehicles-50{
+		width: 100%;
+		text-align: center;
+	}
 	.services-list li
 	{
 		width: 100%;
