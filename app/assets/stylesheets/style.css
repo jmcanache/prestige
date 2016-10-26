@@ -76,6 +76,22 @@ p a
 {
 	color: #FFF;
 }
+.send-form-button{
+	width: 37%;
+    margin-left: 3%;
+    text-align: right;
+    float: right;
+}
+.contact-text{
+	width: 60%;
+	float: left;
+}
+.margin-bottom-20{
+	margin-bottom: 20px;
+}
+.margin-top-10{
+	margin-top: 10px;
+}
 strong
 {
 	color: #000;
@@ -258,10 +274,6 @@ img.radius
 .padding-top-70
 {
 	padding-top: 70px;
-}
-.padding-top-bottom-30
-{
-	padding: 30px 0;
 }
 .padding-left-right-100
 {
@@ -1894,6 +1906,17 @@ span.number.sign
 	margin-top: 28px;
 }
 /* --- comment form, contact form --- */
+#contact-form{
+	padding: 0 8%;
+}
+.contact-column-1{
+	width: 55%;
+}
+.contact-column-2{
+	width: 42%;
+	margin-left: 3%;
+}
+
 .comment-form input,
 .comment-form textarea,
 .contact-form input,
@@ -1919,6 +1942,7 @@ span.number.sign
 {
 	height: 190px;
 	resize: none;
+	margin-top: 20px;
 }
 .comment-form [type='submit'],
 .contact-form [type='submit']
@@ -2195,6 +2219,12 @@ li.template-bullet:before
 {
 	color: #FFF;
 }
+.footer-copy{
+	padding: 30px 0;
+	width: 100%;
+	margin-top: 50px;
+}
+
 /* --- tabs navigation --- */
 .tabs-navigation
 {
@@ -3165,7 +3195,7 @@ body .cost-calculator-box input.big
 /* --- copyright row --- */
 .copyright
 {	
-	color: #A4AAB3;
+	color: white;
 	font-family: 'Open Sans';
 	line-height: 24px;
 }
@@ -3429,6 +3459,7 @@ body.lock-position
     color: #a94442;
 	margin-bottom:5px;
 	display: none;
+	width: 65.5%;
 }
 .success-message{
 	background-color: #dff0d8;
@@ -3436,6 +3467,7 @@ body.lock-position
     color: #3c763d;
 	margin-bottom:5px;
 	display: none;
+	width: 65.5%;
 }
 .close-message{
 	padding: 5px;

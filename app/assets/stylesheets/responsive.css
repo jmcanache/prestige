@@ -595,6 +595,9 @@
 	{
 		clear: both;
 	}
+	.success-message, .error-message{
+		width: 100%;
+	}
 	/* --- blog --- */
 	.column .blog .post-content
 	{
@@ -626,6 +629,13 @@
 	.blog.small .post-image
 	{
 		display: block;
+	}
+	.contact-column-2, .contact-column-1{
+		width: 100%;
+		margin-left:0;
+	}
+	#contact-form{
+		padding: 0;
 	}
 	/* --- comments list --- */
 	#comments-list .comment-details
@@ -933,6 +943,9 @@
 	.row.full-width > .column-1-2 .column-1-3
 	{
 		width: 47%;
+	}
+	.contact-text, .send-form-button{
+		width: 100%;
 	}
 	/* --- 404 page --- */
 	.page-404 h1
