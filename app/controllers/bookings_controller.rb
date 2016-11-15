@@ -66,7 +66,7 @@ class BookingsController < ApplicationController
   end
 
   def contact_email
-    recipient = "canache39@gmail.com"
+    recipient = "canache39@yahoo.com"
     if Contact.send_form(recipient, params).deliver_now
       respond_to do |format|
         format.json { render json: 1 }

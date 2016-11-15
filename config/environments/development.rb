@@ -21,11 +21,10 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000'}
 
   ActionMailer::Base.smtp_settings = {  
-    :address              => "smtp.mailgun.org",  
-    :port                 => 587,  
-    :domain               => "sandbox1b3a7eeb83774f8b8b0630da78c1cf79.mailgun.org",  
-    :user_name            => "postmaster@sandbox1b3a7eeb83774f8b8b0630da78c1cf79.mailgun.org",  
-    :password             => "8cddd9e9b889b17a313e90b4786eeb40",  
+    :address              => "smtp.elasticemail.com",  
+    :port                 => 2525,   
+    :user_name            => "canache39@gmail.com",  
+    :password             => "8f6ada76-b882-4ff4-ba2e-ef463a2f5a39",  
     :authentication       => "plain",  
     :enable_starttls_auto => true 
   }  
