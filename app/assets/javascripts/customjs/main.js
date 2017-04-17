@@ -894,4 +894,16 @@ $(document).on('page:load ready', function(){
             scrollTop: $("#o-quote").offset().top
         }, 2000);
     });
+
+    $( '.moreCars' ).click( function( e ) {
+		e.preventDefault();
+		$.swipebox( [
+			{ href:'file.jpeg', title:'' }, 
+			{ href:'file-1.jpeg', title:'' },
+			{ href:'file-2.jpeg', title:'' },
+			{ href:'pic1.jpeg', title:'' }, 
+			{ href:'pic2.jpeg', title:'' },
+			{ href:'pic3.jpeg', title:'' },
+		] );
+	} );
 });
